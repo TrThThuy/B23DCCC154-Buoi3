@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+      "target": "ESNext",                      // Biên dịch sang ESNext
+      "module": "ESNext",                      // Sử dụng module ESNext
+      "jsx": "react-jsx",                      // JSX hỗ trợ React
+      "strict": true,                          // Bật chế độ strict
+      "esModuleInterop": true,                 // Tương thích với CommonJS
+      "moduleResolution": "node",              // Định nghĩa module theo Node.js
+      "resolveJsonModule": true,               // Hỗ trợ import file JSON
+      "allowSyntheticDefaultImports": true,    // Cho phép import mặc định
+      "skipLibCheck": true,                    // Bỏ qua kiểm tra thư viện
+      "forceConsistentCasingInFileNames": true,// Tên file không phân biệt chữ hoa/thường
+      "baseUrl": "./",                         // Đường dẫn cơ bản
+      "paths": {
+        "@components/*": ["src/components/*"], // Alias cho components
+        "@redux/*": ["src/redux/*"],           // Alias cho redux
+        "@pages/*": ["src/pages/*"],           // Alias cho pages
+        "@utils/*": ["src/utils/*"]            // Alias cho utils
+      },
+      "outDir": "dist"                         // Thư mục đầu ra
+    },
+    "include": ["src"],                        // Chỉ định biên dịch các file trong src
+    "exclude": ["node_modules", "dist"]        // Loại trừ thư mục không cần thiết
+  }
+  
